@@ -1,0 +1,16 @@
+ 
+with app.app_context():
+    user1 = User(username = "pete_kay", password = "123hi")
+    db.session.add(user1) 
+    db.session.commit()
+
+.add_all([]) to add multiple
+
+user2 = User(username = "andrew_lyn", password = "cool5")
+user3 = User(username = "emily_smith", password = "AbCd")
+
+team1 = Team(team_name = "Dragons Of The West", user_id = 1)
+team2 = Team(team_name = "Shadow Heart", user_id = 2)
+
+project1 = Project(project_name = "Overcome Monster Wave", description = "Overcome the wave of nightmare monsters from the Skeleton King to complete part of the Main Quest.", completed = False, team_id = 1)
+project2 = Project(project_name = "Complete Feed the Wolf", description = "Complete the side quest 'Feed the Wolf' in order to gain the summon ability from Aregoden.", completed=False, team_id = 2)
